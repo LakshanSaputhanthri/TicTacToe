@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container2 {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+.btn {
+  margin-top: 10px;
+  height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space center;
+  align-content: center;
+  border-style: dotted;
+  border-color: khaki;
+  margin-top: 15%;
+
+  border-radius: 10px;
+}
+.squre {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-width: 100px;
+  border-width: 3px;
+  border-color: rgb(21, 118, 182);
+  border-style: solid;
+
+  display: grid;
+  font-size: 80px;
+  justify-content: space-around;
+  align-content: space-around;
+  text-align: center;
+}
+
+.squre:nth-child(1),
+.squre:nth-child(2),
+.squre:nth-child(3) {
+  border-top: none;
+}
+.squre:nth-child(7),
+.squre:nth-child(8),
+.squre:nth-child(9) {
+  border-bottom: none;
+}
+.squre:nth-child(1),
+.squre:nth-child(4),
+.squre:nth-child(7) {
+  border-left: none;
+}
+.squre:nth-child(9),
+.squre:nth-child(6),
+.squre:nth-child(3) {
+  border-right: none;
+}
+.win {
+  color: blueviolet;
+  background-color: burlywood;
+}
+.success,
+.winner {
+  background-color: rgb(6, 87, 6);
+  margin-top: 10px;
+  height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 4px;
+}
+.container3 {
+  width: 80%;
+
+  margin-top: 25px;
+  margin-right: 10%;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: burlywood;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+.scoretable {
+  color: aliceblue;
+  width: 90%;
+  border-width: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: aqua;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+th,
+td {
+  border-style: double;
+  border-color: burlywood;
+  border-width: 2px;
+}
